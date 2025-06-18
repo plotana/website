@@ -80,6 +80,10 @@
 
 	</head>
 	<body>
+		<div id="beta-banner" style="background-color:#ff9800; color:#fff; text-align:center; padding:10px 20px; font-size:16px; position:fixed; top:0; left:0; width:100%; z-index:9999;">
+  🚀 Try the new beta version of Plotana! <a href="https://frontend-plotanalab.replit.app" target="_blank" style="color:#fff; text-decoration:underline; font-weight:bold;">Click here</a> to explore.
+  <span id="close-banner" style="margin-left:20px; cursor:pointer; font-weight:bold;">&times;</span>
+</div>
 		
 	<div class="gtco-loader"></div>
 	
@@ -590,6 +594,11 @@
 	<script src="js/magnific-popup-options.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
+		<script>
+  document.getElementById('close-banner').onclick = function () {
+    document.getElementById('beta-banner').style.display = 'none';
+  };
+</script>
 
 	</body>
 </html>
